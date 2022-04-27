@@ -382,7 +382,6 @@ show_usage() {
     echo "XrayR uninstall    - 卸载 XrayR"
     echo "XrayR version      - 查看 XrayR 版本"
     echo "------------------------------------------"
-    echo "此脚本与Longyi备份"
 }
 
 show_menu() {
@@ -407,7 +406,6 @@ show_menu() {
  ${green}11.${plain} 一键安装 bbr (最新内核)
  ${green}12.${plain} 查看 XrayR 版本 
  ${green}13.${plain} 升级维护脚本
- ${green}14.${plain} 此脚本与Longyi备份
  "
  #后续更新可加入上方字符串中
     show_status
@@ -442,7 +440,7 @@ show_menu() {
         ;;
         13) update_shell
         ;;
-        *) echo -e "${red}请输入正确的数字 [0-12]${plain}"
+        *) echo -e "${red}请输入正确的数字 [0-13]${plain}"
         ;;
     esac
 }

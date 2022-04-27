@@ -14,7 +14,7 @@ XrayR已于2022年4月27日删库，此库留作备份使用
 # 一键安装
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/261818813/XrayR/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/longyi8/XrayR/master/install.sh)
 ```
 # Docker 安装
 
@@ -29,7 +29,7 @@ curl -fsSL https://get.docker.com | bash -s docker
 curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
-1. `git clone https://github.com/261818813/XrayR`
+1. `git clone https://github.com/longyi8/XrayR`
 2. `cd XrayR`
 3. 编辑config。
 配置文件基本格式如下，Nodes下可以同时添加多个面板，多个节点配置信息，只需添加相同格式的Nodes item即可。

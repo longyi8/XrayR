@@ -406,6 +406,7 @@ show_menu() {
  ${green}11.${plain} 一键安装 bbr (最新内核)
  ${green}12.${plain} 查看 XrayR 版本 
  ${green}13.${plain} 升级维护脚本
+ ${green}14.${plain} 关闭VMESS AEAD
  "
  #后续更新可加入上方字符串中
     show_status
@@ -440,7 +441,9 @@ show_menu() {
         ;;
         13) update_shell
         ;;
-        *) echo -e "${red}请输入正确的数字 [0-13]${plain}"
+        14) sed -i 'N;18 i Environment="Environment="XRAY_VMESS_AEAD_FORCED=false"' /etc/systemd/system/XrayR.service
+        ;;
+        *) echo -e "${red}请输入正确的数字 [0-14]${plain}"
         ;;
     esac
 }

@@ -441,7 +441,7 @@ show_menu() {
         ;;
         13) update_shell
         ;;
-        14) sed -i 'N;18 i Environment="Environment="XRAY_VMESS_AEAD_FORCED=false"' /etc/systemd/system/XrayR.service
+        14) sed -i 'N;18 i Environment="XRAY_VMESS_AEAD_FORCED=false"' /etc/systemd/system/XrayR.service
         ;;
         *) echo -e "${red}请输入正确的数字 [0-14]${plain}"
         ;;

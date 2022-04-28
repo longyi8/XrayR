@@ -441,11 +441,7 @@ show_menu() {
         ;;
         13) update_shell
         ;;
-        14)     echo "正在关闭AEAD强制加密..."
-        sed -i 'N;18 i Environment="XRAY_VMESS_AEAD_FORCED=false"' /etc/systemd/system/XrayR.service
-        systemctl daemon-reload
-            echo "已经关闭0AEAD强制加密"
-        
+        14) AEAD     
         ;;
         *) echo -e "${red}请输入正确的数字 [0-14]${plain}"
         ;;
@@ -480,6 +476,11 @@ if [[ $# > 0 ]]; then
         "version") check_install 0 && show_XrayR_version 0
         ;;
         "update_shell") update_shell
+        ;;
+        "AEAD") echo "正在关闭AEAD强制加密..."
+        sed -i 'N;18 i Environment="XRAY_VMESS_AEAD_FORCED=false"' /etc/systemd/system/XrayR.service
+        systemctl daemon-reload
+            echo "已经关闭0AEAD强制加密"
         ;;
         *) show_usage
     esac

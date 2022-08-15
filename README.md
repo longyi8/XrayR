@@ -6,6 +6,7 @@ A Xray backend framework that can easily support many panels.
 Find the source code here: [XrayR-project/XrayR](https://github.com/XrayR-project/XrayR)
 
 XrayR已于2022年4月27日删库，此库留作备份使用
+XrayR已于7.28回归
 
 # 详细使用教程
 
